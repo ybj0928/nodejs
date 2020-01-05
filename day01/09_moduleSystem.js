@@ -14,9 +14,11 @@
     // export default { name: '', age: '', className: ''}
     // const obj = {};  export default obj
 
-//export 出来的时候，import引入时是需要加上大括号的 export default 出来的是不需要加上大括号的
+// export 出来的时候，import引入时是需要加上大括号的 export default 出来的是不需要加上大括号的
 
 // 可以混合使用 import obj, {name, age} from '...' 注意export default 出来的一定是在export 出来的之前
 
-
 // node中的模块系统 没有全局作用域 只有模块作用域(文件作用域)
+// jquery即可以使用import导入也可以使用require导入
+// import jquery from 'jquery'  export default jquery
+// const jquery = require('jquery') exports = jquery

@@ -4,9 +4,9 @@
 // js 11 个内置对象
 // global
 // String Number Boolean
-// Array Function
+// Array Function Object
 // Error
-// Date Math Object RegExp
+// Date Math RegExp
 
 
 console.log(global)
