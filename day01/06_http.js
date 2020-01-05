@@ -12,7 +12,11 @@ let server = http.createServer()
      * 提供反馈
     **/
 server.on('request', (request, response) => {
-    console.log(request, response)
+    // console.log(request, response)
+    console.log('请求路径是：' + request.url)  // request.url 是请求路径
+    response.write('hello') // response的write方法可以使用多次，返回的内容，但是必须以end方法结束响应
+    response.write(' nodejs')
+    response.end() // 通知客户端请求完成了
 })
 // 3.启动服务，设置端口号
 server.listen(3000, () => {
