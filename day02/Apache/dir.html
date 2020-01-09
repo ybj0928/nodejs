@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Index of /</title>
+  <script>
+    console.log()
+  </script>
+ </head>
+ <body>
+<h1>Index of /</h1>
+  <table>
+    <tr><th valign="top"><img src="/blank.gif" alt="[ICO]"></th><th><a href="#">Name</a></th><th><a href="#">Last modified</a></th><th><a href="#">Size</a></th><th><a href="#">Description</a></th></tr>
+    <tr><th colspan="5"><hr></th></tr>
+    {{ each value}}
+    <tr><td valign="top"><img src="{{ $value.img }}" alt="[TXT]"></td><td><a href="">{{ $value.name }}</a> </td><td align="right">2020-01-09 21:27  </td><td align="right">  0 </td><td>&nbsp;</td></tr>
+    {{ /each }}
+    <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.37 (Win32) OpenSSL/1.1.1a PHP/7.3.1 Server at 127.0.0.1 Port 80</address>
+</body></html>
