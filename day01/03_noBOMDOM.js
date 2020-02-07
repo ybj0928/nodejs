@@ -11,6 +11,6 @@
 
 console.log(global)
 
-console.log(window)
+console.log(window) // 没有window对象
 
-console.log(document)
+console.log(document) // 没有document对象

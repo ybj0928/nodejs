@@ -4,7 +4,7 @@
 // 1) import 导入的一定是export出来的，这里的export是不带s的
 // 2) export 分为两种情况 第一种是直接export出去 第二种是 export default
     // import {uname} from '...'
-    //  export const uname = 'ybj'
+    // export const uname = 'ybj'
     // const uname = 'ybj' export {uname}
     // 以上的两种写法都是正确的
     // const uname = 'ybj' export uname 这种写法是错误的

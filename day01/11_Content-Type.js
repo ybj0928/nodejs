@@ -7,7 +7,7 @@ server.on('request', (req, res) => {
   // 当服务器发送响应的时候 响应内容的编码格式是utf-8
   // 而浏览器接受到响应的时候如果没有告诉浏览器怎么解析响应的时候，浏览器会默认按照当前操作系统的编码格式解析
   // 中文操作系统的编码格式是GBK，所以导致了乱码的出现
-  // 此时响应头里面的Content-Type横空出世
+  // 此时响应头里面的Content-Type就起到了不可或缺的作用
   if (req.url === '/') {
     fs.readFile('./files/index.html', (err, data) => {
       if (err) throw new Error('读取文件是失败' + err)

@@ -12,7 +12,6 @@
  */
 
  //nodejs中的JavaScript
-
  /**
   * 有Ecmascript, 没有BOM，DOM，此外执行环境中提供了一些服务器级别的操作级别的API
   */

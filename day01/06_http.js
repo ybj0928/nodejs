@@ -6,7 +6,7 @@ const http = require('http')
 // 2.使用http.createServer() 创建一个web服务器，返回一个server实例
 let server = http.createServer()
     /**
-     *  服务器功能 （提供数据的服务，无论是图片，文件还是什么都是属于数据服务）
+     * 服务器功能 （提供数据的服务，无论是图片，文件还是什么都是属于数据服务）
      * 接受请求
      * 处理请求
      * 提供反馈
