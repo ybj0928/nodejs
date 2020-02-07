@@ -26,11 +26,38 @@ let commentList = [{
 server.on('request', (request, resposne) => {
   let pathObj = url.parse(request.url, true)
   let pathname = pathObj.pathname
+  console.log(pathname)
   if (pathname === '/' || pathname === '/index') {
-    fs.readFile('./index.html', (err, data) => {
+    fs.readFile('./view/index.html', (err, data) => {
       if (err) throw new Error('读取文件失败')
       let str = template.render(data.toString(), {commentList: commentList})
       resposne.end(str)
+    })
+  } else if (pathname === '/comment') {
+    if (pathObj.search) {
+      commentList.unshift({
+        comment: pathObj.query.comment,
+        cname: pathObj.query.cname,
+        date: '2020-02-02 12:20:30'
+      })
+      resposne.statusCode = 302
+      resposne.setHeader('location', '/')
+      resposne.end()
+    } else {
+      fs.readFile('./view/comment.html', (err, data) => {
+        if (err) throw new Error('读取文件失败')
+        resposne.end(data)
+      })
+    }
+  } else if (pathname.indexOf('/public') === 0) { // 静态资源处理
+    fs.readFile('.' + pathname, (err, data) => {
+      if (err) throw new Error('读取文件失败')
+      resposne.end(data)
+    })
+  } else {
+    fs.readFile('./view/notFound.html', (err, data) => { // 404页面
+      if (err) throw new Error('读取文件失败')
+      resposne.end(data)
     })
   }
 })
