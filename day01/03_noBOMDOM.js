@@ -9,6 +9,10 @@
 // Date Math RegExp
 
 
+// js五大数据类型
+// Number String Boolean undefind null
+
+
 console.log(global)
 
 console.log(window) // 没有window对象

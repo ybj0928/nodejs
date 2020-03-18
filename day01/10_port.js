@@ -16,7 +16,7 @@ let server = http.createServer()
 server.on('request', (request, response) => {
   // 可以获取对应访问服务器的客户端，对其响应什么内容
   console.log('客户端的地址是:' + request.socket.remoteAddress)
-  console.log('客户端的端口号是:' + request.socket.remotePort)
+  console.log('客户端的端口号是:' + request.socket.remotePort) // 同一个客户端浏览器的端口号是不停的会变化的
   console.log()
   if (request.url === '/message') {
     let json = [{
