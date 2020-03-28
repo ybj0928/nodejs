@@ -1,0 +1,5 @@
+const template = require('art-template')
+let { cname } = require('a/demo')
+console.log(cname)
+let { age } = require('b')
+console.log(age)
