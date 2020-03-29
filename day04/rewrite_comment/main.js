@@ -4,7 +4,7 @@ const bodyParser = require('body-parser')
 // 创建一个服务器
 let app = express()
 // express 中的静态资源服务
-// 第一个参数是路由，写什么，那么请求公开目录(第二个参数中的路径)下的资源的时候需要写成 ip地址 + 端口号 + 第一个参数 + 公开目录下的资源文件 即可
+// 第一个参数是路由，那么请求公开目录(第二个参数中的路径)下的资源的时候需要写成 ip地址 + 端口号 + 第一个参数 + 公开目录下的资源文件 即可
 // 第一个参数可以省略，省略相当于第一个参数是 '/'
 app.use('/public/', express.static('./public')) // 开发public目录
 // view engine setup
