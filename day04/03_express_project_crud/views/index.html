@@ -138,7 +138,7 @@
 
         <h2>
           Section title
-          <a href="/add" class="btn btn-sm btn-primary f_r">
+          <a href="/form" class="btn btn-sm btn-primary f_r">
             新 增
           </a>
         </h2>
@@ -164,8 +164,8 @@
                   <td>{{ $value.album }}</td>
                   <td>{{ $value.ptime }}</td>
                   <td>
-                    <a href="">删除</a>
-                    <a href="">编辑</a>
+                    <a href="/delete?id={{$value.id}}">删除</a>
+                    <a href="/form?id={{$value.id}}">编辑</a>
                   </td>
                 </tr>
               {{ /each }}
