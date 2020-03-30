@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="/public/css/bootstrap.css">
+</head>
+<body>
+  <div class="container">
+    <h3>新增歌曲 <small style="color: aquamarine;">songs</small></h3>
+    <form method="post" action="/add">
+      <!-- <input type="hidden" name="" value=""> -->
+      <div class="form-group">
+        <label for="sname">歌名</label>
+        <input required maxlength="20" minlength="1" type="text" class="form-control" name="sname" id="sname" placeholder="歌名">
+      </div>
+      <div class="form-group">
+        <label for="author">歌手</label>
+        <input required maxlength="20" minlength="1" type="text" class="form-control" name="author" id="author" placeholder="歌手">
+      </div>
+      <div class="form-group">
+        <label for="album">专辑</label>
+        <input required maxlength="20" minlength="1" type="text" class="form-control" name="album" id="album" placeholder="专辑">
+      </div>
+      <button type="submit" class="btn btn-success">确定</button>
+      <a href="/" class="btn btn-primary">返回首页</a>
+    </form>
+  </div>
+</body>
+</html>
