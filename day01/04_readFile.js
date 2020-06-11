@@ -1,4 +1,4 @@
-const fs = require('fs') // 引入fs核心模块
+ const fs = require('fs') // 引入fs核心模块
 
 
 // 第一个参数是error

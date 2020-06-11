@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  function ajax (method, url, callback) {
+    let xhr
+    if (window.XMLHttpRequest) {
+      xhr = new XMLHttpRequest()
+    } else {
+      xhr = new ActiveXObject('Microsoft.XMLHTTP')
+    }
+
+    xhr.onreadystatechange = ()  => {
+      if(xhr.readyState === 4 && xhr.status === 200) {
+        console.log(111111)
+        callback(xhr.responseText || xhr.responseXML)
+      }
+    }
+    xhr.open(method, url, true)
+    xhr.send()
+    console.log(22222)
+  }
+
+  ajax('GET', './data.json', (data) => {
+    console.log(data)
+  })
+</script>
+</body>
+</html>

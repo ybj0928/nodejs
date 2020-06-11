@@ -3,7 +3,6 @@ const url = require('url')
 
 let start = function (port, route) {
   let server = http.createServer()
-
   server.on('request', (request, response) => {
     let pathname = url.parse(request.url, true).pathname
     route(pathname)

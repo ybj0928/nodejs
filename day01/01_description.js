@@ -5,7 +5,7 @@
  *  nodejs是基于Chrome的v8引擎的
  */
 
-// 浏览器的JavaScript
+// 浏览器中的JavaScript
 /**
  * Ecmascript(基础语法)
  * BOM，DOM
@@ -13,7 +13,7 @@
 
  //nodejs中的JavaScript
  /**
-  * 有Ecmascript, 没有BOM，DOM，此外执行环境中提供了一些服务器级别的操作级别的API
+  * 有Ecmascript, 没有BOM，DOM，此外执行环境中提供了一些服务器级别的操作API
   */
 
 // 事件驱动
