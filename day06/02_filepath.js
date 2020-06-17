@@ -1,0 +1,1 @@
+require('./demo/filepath.js') // require中的路径必须写全
